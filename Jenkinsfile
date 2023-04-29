@@ -23,9 +23,11 @@ pipeline {
             }
         } 
         
-          stage('deploy') {
+          
+            stage('deploy') {
             steps {
                 echo 'deploy'
                 sleep 4
             }
+
             
