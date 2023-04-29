@@ -28,4 +28,4 @@ pipeline {
                 echo 'deploy'
                 sleep 4
             }
-        }
+            
