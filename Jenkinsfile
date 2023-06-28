@@ -20,12 +20,12 @@ pipeline{
                   file: "target/${ mavenPom.artifactId}-${ mavenPom.version}.${ mavenPom.packaging}", 
                    type: "${ mavenPom.packaging}"]], 
                    credentialsId: 'nexusID', 
-                    groupId: "$ mavenPom.groupId}", 
+                    groupId: "${mavenPom.groupId}", 
                      nexusUrl: '139.144.31.245:8081', 
                       nexusVersion: 'nexus3', 
                        protocol: 'http', 
                         repository: 'biom', 
-                         version: "${ mavenPom.version}"
+                         version: "${mavenPom.version}"
                  }
             }
 
