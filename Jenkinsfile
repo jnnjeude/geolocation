@@ -17,8 +17,8 @@ pipeline{
                 nexusArtifactUploader artifacts: 
                 [[artifactId: "${mavenPom.artifactId}",
                  classifier: '', 
-                  file: "target/${ mavenPom.artifactId}-${ mavenPom.version}.${ mavenPom.packaging}", 
-                   type: "${ mavenPom.packaging}"]], 
+                  file: "target/${mavenPom.artifactId}-${mavenPom.version}.${mavenPom.packaging}", 
+                   type: "${mavenPom.packaging}"]], 
                    credentialsId: 'nexusID', 
                     groupId: "${mavenPom.groupId}", 
                      nexusUrl: '139.144.31.245:8081', 
